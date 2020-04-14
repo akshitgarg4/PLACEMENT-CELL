@@ -6,11 +6,14 @@ It is basically a Student Company Management System made using HTML , CSS, Java 
 It Broadly consists of 3 Webpages:
 
 1-> Student Login Page
+<img src="IMAGES/student.png">
 
     Where each student of the college has to register giving some of his details like SID, CGPA, Mobile 
     Number, Father's Name etc. that are essential to maintain a record of an individual.
+    <img src="IMAGES/student.png">
        
 2-> Company Login Page
+<img src="IMAGES/company.png">
 
     Where every company that comes into college for placements and internships has to give certain
     records like Company's Address, Company ID , Required CGPA, 10 or 12th marks if required etc.
@@ -18,6 +21,8 @@ It Broadly consists of 3 Webpages:
      prepared through which it can select the candidates.
        
 3-> Details Page
+<img src="IMAGES/view2.png">
+<img src="IMAGES/view.png">
 
     Where students can login to view the company's for which they are eligible.
     Company can login to view the list of eligible candidates that surpass the eligible conditions set
