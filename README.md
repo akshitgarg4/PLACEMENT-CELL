@@ -1,4 +1,7 @@
                 
+                           PLACEMENT CELL 
+                        DREAM OF EVERY STUDENT
+It is basically a Student Company Management System made using HTML , CSS, Java Scr ipt, CGI Scripting,  Ajax, Pymysql etc.
 
 It Broadly consists of 3 Webpages:
 
