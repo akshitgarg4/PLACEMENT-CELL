@@ -1,0 +1,135 @@
+body{
+margin: 0;
+padding: 0;
+font-family: calibri;
+background: url("background.png") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.tagline{
+float: left;
+margin: 10;
+}
+.container{
+width: 90%;
+margin:0 auto;
+}
+
+.menu {
+float: right;
+}
+
+.menu li{
+float: left;
+width: 120px;
+height: 65px;
+line-height: 70px;
+text-align: center;
+list-style:none;
+}
+
+.menu li a{
+color: #000;
+text-decoration: none;
+list-style: none;
+font-family: calibri;
+display: block;
+}
+.menu li:hover {
+background: rgba(0,0,0,.7);
+}
+.menu li a:hover {
+color: #fff;
+}
+.active {
+background-color: rgba(0,0,0,.7);
+color: #fff;
+}
+
+.box
+{
+position: absolute;
+top: 100%;
+Left:50%;
+transform: translate(-50%,-50%);
+width: 400px;
+height:840px;
+padding: 40px;
+background: rgba(0,0,0,.7);
+box-sizing: border-box;
+border-radius: 10px;
+}
+.box h2
+{
+margin: 0 0 30px
+padding: 0;
+color: #fff;
+text-align: center;
+}
+.box .inputBox
+{
+position:relative;
+}
+.box .inputBox input
+{
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+Letter-spacing: 1px;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+.box .inputBox label
+{
+position: absolute;
+top: 0;
+Left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+{
+top: -18px;
+Left: 0;
+color: #03a9f4;
+font-size: 12px;
+
+}
+.box input[type="button"]
+{
+background: transparent;
+border: none;
+outline: none;
+color: #fff;
+background: #03a9f4;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+

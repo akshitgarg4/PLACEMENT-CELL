@@ -1,0 +1,128 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".menu ul li a").click(function(){
+$(".menu ul li a").removeClass("active");
+$(this).addClass("active");
+});
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+$("#t3").click(function(){
+$s=$("#t1").val;
+$p=$("#t2").val;
+$.ajax({type:"POST",url:"view1.py",data"{"s":$s,"p":$p},success:function(result)
+{
+alert(result);}
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#t6").click(function(){
+$cid=$("#t4").val;
+$cp=$("#t5").val;
+$.ajax({type:"POST",url:"view2.py",data"{"cid":$cid,"cp":$cp},success:function(result)
+{
+alert(result);}
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#t10").click(function(){
+$sid=$("#t1").val;
+$n=$("#t2").val;
+$pa=$("#t1").val;
+$.ajax({type:"POST",url:"view3.py",data"{"sid":$sid,"n":$n,"pa":$pa},success:function(result)
+{
+alert(result);}
+});
+});
+});
+</script>
+
+
+<title>PLACEMENT CELL</title>
+<link rel="stylesheet" href="styles1.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+<div class="tagline">
+<h1><b>PLACEMENT &nbsp; CELL</b></h1>
+<h4>Dream Of Every Student</h4>
+</div>
+<div>
+<ul class="menu">
+<li><a href="student.html">STUDENT</a></li>
+<li><a href="company.html">COMPANY</a></li>
+<li><a href="details.html">DETAILS</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div class="box">
+<h2><b>VIEW STUDENT'S DETAILS</b></h2><br>
+<form>
+<div class="inputBox">
+<input type="text" id="t1" required=""/>
+<label>Enter SID</label>
+</div>
+<div class="inputBox">
+<input type="password" id="t2" required=""/>
+<label>Enter Password</label>
+</div>
+<center><input type="button" value="VIEW DETAILS" id="t3"/></center><br>
+
+
+
+<h2><b>VIEW COMPANY'S DETAILS</b></h2>
+<div class="inputBox">
+<input type="text" id="t4" required=""/>
+<label>Enter Company ID</label>
+</div>
+<div class="inputBox">
+<input type="password" id="t5" required=""/>
+<label>Enter Password</label>
+</div>
+<center><input type="button" value="VIEW DETAILS" id="t6"/></center><br>
+
+
+
+
+<h2><b>PLACEMENT DETAILS</b></h2><br>
+<form>
+<div class="inputBox">
+<input type="text" id="t7" required=""/>
+<label>Enter SID</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t8" required=""/>
+<label>Enter Name</label>
+</div>
+<div class="inputBox">
+<input type="password" id="t9" required=""/>
+<label>Enter Password</label>
+</div>
+<center><input type="button" value="VIEW DETAILS" id="t10"/></center>
+
+
+
+
+</form>
+</div>
+</body>
+</html>

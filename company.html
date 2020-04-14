@@ -1,0 +1,97 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".menu ul li a").click(function(){
+$(".menu ul li a").removeClass("active");
+$(this).addClass("active");
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#t9").click(function(){
+$cid=$("#t1").val();
+$n=$("#t2").val();
+$e=$("#t3").val();
+$c=$("#t4").val();
+$t=$("#t5").val();
+$cg=$("#t6").val();
+$a=$("#t7").val();
+$p=$("#t8").val();
+alert("WELCOME"+$n);
+$.ajax({type:"POST",url:"company.py",data:{"cid":$cid,"n":$n,"e":$e,"c":$c,"t":$t,"cg":$cg,"a":$a,"p":$p},success:function(result)
+{
+alert(result);}
+});
+});
+});
+</script>
+<title>PLACEMENT CELL</title>
+<link rel="stylesheet" href="styles1.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+<div class="tagline">
+<h1><b>PLACEMENT &nbsp; CELL</b></h1>
+<h4>Dream Of Every Student</h4>
+</div>
+<div>
+<ul class="menu">
+<li><a href="student.html">STUDENT</a></li>
+<li><a href="company.html">COMPANY</a></li>
+<li><a href="details.html">DETAILS</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div class="box">
+<h2><b> SIGN UP</b></h2><br><br><br>
+<form>
+<div class="inputBox">
+<input type="text" id="t1" required=""/>
+<label>Company ID</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t2" required=""/>
+<label>Company Name</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t3" required=""/>
+<label>Email</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t4" required=""/>
+<label>Contact Number</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t5" required=""/>
+<label>12 Percentage</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t6" required=""/>
+<label>College C.G.P.A</label>
+</div>
+<div class="inputBox">
+<input type="text" id="t7" required=""/>
+<label>Office Address</label>
+</div>
+<div class="inputBox">
+<input type="password" id="t8" required=""/><br><br><br>
+<label>Password</label>
+</div>
+<center><input type="button" value="SUBMIT"  id="t9"/></center>
+</form>
+</div>
+
+
+
+
+</body>
+</html>
