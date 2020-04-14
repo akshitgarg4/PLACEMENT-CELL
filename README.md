@@ -10,7 +10,6 @@ It Broadly consists of 3 Webpages:
 
     Where each student of the college has to register giving some of his details like SID, CGPA, Mobile 
     Number, Father's Name etc. that are essential to maintain a record of an individual.
-    <img src="IMAGES/student.png">
        
 2-> Company Login Page
 <img src="IMAGES/company.png">
