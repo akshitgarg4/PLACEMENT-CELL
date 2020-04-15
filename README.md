@@ -6,7 +6,7 @@ It is basically a Student Company Management System made using HTML , CSS, Java 
 It Broadly consists of 3 Webpages:
 
 1-> Student Login Page
-<img src="IMAGES/student.png">
+<img src="IMAGES/student1.png">
 
     Where each student of the college has to register giving some of his details like SID, CGPA, Mobile 
     Number, Father's Name etc. that are essential to maintain a record of an individual.
